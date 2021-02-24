@@ -70,13 +70,32 @@ echo $sum1 == $sum2 ? "Да" : "Нет";
 //Задание6
 echo "</br></br>Задание 6</br>";
 
-$degree = 180;
+$degree = '';
 
-if ($degree >= 0 && $degree <= 360) {
-    echo "Введено {$degree} градус(ов) </br> Прошло часов:";
-    echo 12 / 360 * $degree;
-} else {
-    echo "Введено неверное значение градусов";
+?>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+
+    <form action="/" method="POST">
+        <p>Введите градусы для преобразования в часы и нажмите Enter</p>
+        <input type="number" min="0" max="360" name="degree" required value="<?= $degree ?>">
+    </form>
+    </body>
+    </html>
+
+<?php
+
+if (isset($_REQUEST['degree'])) {
+    $degree = $_REQUEST['degree'];
+    if ($degree >= 0 && $degree <= 360) {
+        echo "Введено {$degree} градус(ов) </br> Прошло часов:";
+        echo 12 / 360 * $degree;
+    }
 }
 
 
