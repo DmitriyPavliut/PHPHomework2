@@ -1,6 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
 <?php
 
-//Задание1
+    //Задание1
     echo "Задание 1";
 
     function checkEmpty($a)
@@ -19,7 +25,7 @@
     checkEmpty('0');
 
 
-//Задание2
+    //Задание2
     echo "</br></br>Задание 2</br>";
 
     $variable2 = 123;
@@ -29,7 +35,7 @@
     echo $variable2;
 
 
-//Задание3
+    //Задание3
     echo "</br></br>Задание 3";
 
     function countDifference($a, $b)
@@ -43,7 +49,7 @@
     countDifference(3, 5);
 
 
-//Задание4
+    //Задание4
     echo "</br></br>Задание 4</br>";
 
     $variable4 = 'abcde';
@@ -52,7 +58,7 @@
     echo $variable4[0] === "a" ? "Да" : "Нет";
 
 
-//Задание5
+    //Задание5
     echo "</br></br>Задание 5</br>";
 
     $variable5 = '123456';
@@ -67,26 +73,19 @@
     echo $sum1 == $sum2 ? "Да" : "Нет";
 
 
-//Задание6
+    //Задание6
     echo "</br></br>Задание 6</br>";
 
     $degree = '';
 
 ?>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title>Document</title>
-    </head>
-    <body>
 
-    <form action="/" method="POST">
-        <p>Введите градусы для преобразования в часы и нажмите Enter</p>
-        <input type="number" min="0" max="360" name="degree" required>
-    </form>
-    </body>
-    </html>
+<form action="/" method="POST">
+    <p>Введите градусы для преобразования в часы и нажмите Enter</p>
+    <input type="number" min="0" max="360" name="degree" required>
+</form>
+
 
 <?php
 
@@ -103,7 +102,7 @@
     }
 
 
-//Задание7
+    //Задание7
     echo "</br></br>Задание 7</br>";
     $variable7Start = 20;
     $variable7End = 45;
@@ -122,7 +121,7 @@
     echo "</br>Сумма этих чисел: {$sumNumbers7}";
 
 
-//Задание8
+    //Задание8
     echo "</br></br>Задание 8</br>";
 
     $variable8 = 12345;
@@ -138,10 +137,10 @@
     echo "</br>После изменения получаем {$variable8}";
 
 
-//Задание9
+    //Задание9
     echo "</br></br>Задание 9</br>";
 
-//через while
+    //через while
     $num = 1000;
     $counter = 0;
 
@@ -153,7 +152,7 @@
     }
     echo "</br>После цикла while останется число {$num}, потребуется {$counter} циклов";
 
-//через for
+    //через for
     $num = 1000;
 
     for ($counter = 0; $num > 50; $counter++) {
@@ -163,7 +162,7 @@
     echo "</br>После цикла for останется число {$num}, потребуется {$counter} циклов";
 
 
-//Задание10
+    //Задание10
     echo "</br></br>Задание 10</br></br>";
 
     function drawShape($height, $width, $symbol = '*')
@@ -178,3 +177,7 @@
     }
 
     drawShape(4, 7);
+
+?>
+</body>
+</html>
